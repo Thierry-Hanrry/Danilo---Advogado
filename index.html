@@ -119,7 +119,7 @@
                 width: min(320px, 80vw);
                 height: auto;
                 object-fit: contain;
-                object-position: center 12%;
+                object-position: center 8%;
                 display: block;
                 margin: 0 auto;
             }
@@ -155,6 +155,11 @@
                 max-width: 780px;
                 width: 100%;
                 margin: 0 auto !important;
+                margin-top: 12px !important;
+            }
+
+            .elementor-element-3e09f25 {
+                margin-bottom: 12px;
             }
 
             .elementor-element-f86a5f4 {
@@ -435,8 +440,10 @@
                 }
 
                 .reviews-carousel {
-                    width: calc(100% - 24px);
-                    max-width: calc(100vw - 24px);
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 0 22px;
+                    box-sizing: border-box;
                 }
 
                 .elementor-element-194d2f0 .elementor-widget-container {
@@ -447,20 +454,23 @@
                     width: 36px;
                     height: 36px;
                     font-size: 22px;
+                    top: 50%;
                 }
 
                 .review-arrow-prev {
-                    left: 12px;
+                    left: 0;
+                    transform: translate(-35%, -50%);
                 }
 
                 .review-arrow-next {
-                    right: 12px;
+                    right: 0;
+                    transform: translate(35%, -50%);
                 }
 
                 .elementor-element-e44d867 img {
                     width: min(260px, 78vw);
                     height: auto;
-                    object-position: center 14%;
+                    object-position: center 6%;
                 }
 
                 .review-card {
