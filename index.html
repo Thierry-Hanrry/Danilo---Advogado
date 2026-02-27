@@ -312,9 +312,21 @@
                 padding: 0 0.08em 0.06em;
             }
 
+            .elementor-element-d7de38e .elementor-headline-dynamic-wrapper {
+                position: relative;
+                display: inline-block;
+                padding: 0 0.08em 0.06em;
+            }
+
             .elementor-element-c19bc46 .elementor-headline-dynamic-wrapper svg,
             .elementor-element-c19bc46 .elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text::before,
             .elementor-element-c19bc46 .elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text::after {
+                display: none !important;
+            }
+
+            .elementor-element-d7de38e .elementor-headline-dynamic-wrapper svg,
+            .elementor-element-d7de38e .elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text::before,
+            .elementor-element-d7de38e .elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text::after {
                 display: none !important;
             }
 
@@ -323,7 +335,36 @@
                 z-index: 1;
             }
 
+            .elementor-element-d7de38e .elementor-headline-dynamic-text {
+                position: relative;
+                z-index: 1;
+            }
+
             .elementor-element-c19bc46 .elementor-headline-dynamic-wrapper::after {
+                content: "";
+                position: absolute;
+                left: -1.5%;
+                right: -1.5%;
+                bottom: 0.08em;
+                height: 0.5em;
+                background: var(--accent);
+                border-radius: 2px;
+                clip-path: polygon(1% 12%, 99% 0%, 97% 100%, 3% 96%);
+                transform: scaleX(0);
+                transform-origin: left center;
+                opacity: 0;
+                z-index: 0;
+                animation-name: marker-pass !important;
+                animation-duration: 2.8s !important;
+                animation-timing-function: ease-in-out !important;
+                animation-iteration-count: infinite !important;
+                animation-fill-mode: none !important;
+                animation-play-state: running !important;
+                animation-delay: 0s !important;
+                will-change: transform, opacity;
+            }
+
+            .elementor-element-d7de38e .elementor-headline-dynamic-wrapper::after {
                 content: "";
                 position: absolute;
                 left: -1.5%;
