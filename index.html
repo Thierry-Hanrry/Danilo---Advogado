@@ -71,6 +71,36 @@
                 color: var(--accent) !important;
             }
 
+            .elementor-element-1c86f14 .soft-voce {
+                text-shadow: 0 0 6px rgba(255, 255, 255, 0.45), 0 0 12px rgba(255, 122, 0, 0.25);
+            }
+
+            .elementor-element-cac43df .elementor-heading-title {
+                font-family: "Sora", sans-serif;
+                font-weight: 800;
+                letter-spacing: 0.9px;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                color: #ffffff;
+                text-shadow: 0 0 10px rgba(255, 156, 84, 0.45), 0 0 20px rgba(255, 122, 0, 0.25);
+            }
+
+            .elementor-element-cac43df .elementor-heading-title::after {
+                content: "";
+                position: absolute;
+                top: -20%;
+                left: -40%;
+                width: 36%;
+                height: 140%;
+                background: linear-gradient(110deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.88) 50%, rgba(255, 255, 255, 0) 100%);
+                transform: skewX(-22deg);
+                filter: blur(0.4px);
+                animation: brand-shine 3.2s ease-in-out infinite;
+                pointer-events: none;
+            }
+
             .elementor-button {
                 background: var(--accent) !important;
                 border-color: var(--accent) !important;
@@ -148,6 +178,72 @@
             .elementor-element-78b00a8 .contact-email:focus-visible {
                 outline: 2px solid var(--accent);
                 outline-offset: 2px;
+            }
+
+            .elementor-element-78b00a8 .contact-list {
+                margin-top: 10px;
+            }
+
+            .elementor-element-78b00a8 .contact-row {
+                display: block;
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+
+            .elementor-element-78b00a8 .contact-row:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .elementor-element-78b00a8 .location-link {
+                color: #ffffff;
+                text-decoration: underline;
+                text-decoration-color: rgba(255, 122, 0, 0.65);
+                text-underline-offset: 2px;
+            }
+
+            .elementor-element-78b00a8 .location-link:hover {
+                color: #ffd2ad;
+            }
+
+            .elementor-element-78b00a8 .map-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 14px;
+                padding: 10px 16px;
+                border-radius: 999px;
+                background: var(--accent);
+                border: 1px solid var(--accent);
+                color: #ffffff;
+                font-weight: 700;
+                text-decoration: none;
+                transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+            }
+
+            .elementor-element-78b00a8 .map-button:hover {
+                background: var(--accent-strong);
+                border-color: var(--accent-strong);
+                transform: translateY(-1px);
+            }
+
+            .elementor-element-78b00a8 .location-map {
+                margin: 16px auto 0;
+                max-width: 500px;
+                border-radius: 22px;
+                padding: 6px;
+                overflow: hidden;
+                border: 1px solid rgba(255, 122, 0, 0.45);
+                background: linear-gradient(145deg, rgba(255, 122, 0, 0.22), rgba(255, 122, 0, 0.08));
+                box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+            }
+
+            .elementor-element-78b00a8 .location-map iframe {
+                display: block;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 10;
+                border-radius: 16px;
+                border: 0;
             }
 
             .reviews-carousel {
@@ -445,6 +541,28 @@
                 }
             }
 
+            @keyframes brand-shine {
+                0%,
+                20% {
+                    left: -45%;
+                    opacity: 0;
+                }
+
+                28% {
+                    opacity: 0.95;
+                }
+
+                55% {
+                    left: 115%;
+                    opacity: 0;
+                }
+
+                100% {
+                    left: 115%;
+                    opacity: 0;
+                }
+            }
+
             @media (max-width: 767px) {
                 .elementor-element-602fcd5 {
                     overflow-x: hidden;
@@ -482,6 +600,16 @@
                     width: min(260px, 78vw);
                     height: auto;
                     object-position: center 6%;
+                }
+
+                .elementor-element-78b00a8 .location-map {
+                    border-radius: 18px;
+                    padding: 4px;
+                }
+
+                .elementor-element-78b00a8 .location-map iframe {
+                    border-radius: 14px;
+                    aspect-ratio: 4 / 3;
                 }
 
                 .review-card {
@@ -523,7 +651,7 @@
                     </div>
                     <div class="elementor-element elementor-element-cac43df elementor-widget elementor-widget-heading" data-id="cac43df" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">Danilo Lima</h2>
+                            <h2 class="elementor-heading-title elementor-size-default">Danilo Lima Advogados</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-c19bc46 elementor-widget__width-initial elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="c19bc46" data-element_type="widget" data-settings="{&quot;marker&quot;:&quot;double_underline&quot;,&quot;highlighted_text&quot;:&quot;Direito do Consumidor&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;highlight_animation_duration&quot;:1200}" data-widget_type="animated-headline.default">
@@ -545,7 +673,7 @@
                     </div>
                     <div class="elementor-element elementor-element-f50a4af elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="f50a4af" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Seja bem-vindo, entregamos o melhor atendimento em direito do consumidor. Caso esteja passando por algum problema, estaremos aqui para te ouvir e correr atrás do seu direito.</p>
+                            <p>Seja bem-vindo, entregamos o melhor atendimento em direito do consumidor. Caso esteja passando por algum problema, estaremos aqui para te ouvir e </p>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-6eb502c elementor-widget elementor-widget-button" data-id="6eb502c" data-element_type="widget" data-widget_type="button.default">
@@ -856,67 +984,45 @@ de viagem</h3>
                                                     <div class="review-head">
                                                         <div class="review-user">
                                                             <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Carla Mendes</span>
+                                                            <span class="review-name">Adriana</span>
                                                         </div>
                                                         <span class="review-date">Cliente</span>
                                                     </div>
                                                     <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Atendimento rápido, explicações claras e ótimo suporte durante o processo.</p>
+                                                    <p class="review-text">Boa noite, doutor. Deus é maravilhoso mesmo, e o senhor é porreta, viu? Só tenho a agradecer.</p>
                                                 </article>
                                                 <article class="review-card">
                                                     <div class="review-head">
                                                         <div class="review-user">
                                                             <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Rafael Souza</span>
+                                                            <span class="review-name">Identidade preservada</span>
                                                         </div>
                                                         <span class="review-date">Cliente</span>
                                                     </div>
                                                     <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Profissional atencioso e comprometido em cada etapa do caso.</p>
+                                                    <p class="review-text">Dr. Danilo, ontem o elogiei na Defensoria pelo seu atencioso trabalho comigo. E eu achando que a Defensoria atendia mal.</p>
                                                 </article>
                                                 <article class="review-card">
                                                     <div class="review-head">
                                                         <div class="review-user">
                                                             <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Fernanda Alves</span>
+                                                            <span class="review-name">Bruna</span>
                                                         </div>
                                                         <span class="review-date">Cliente</span>
                                                     </div>
                                                     <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Comunicação excelente e acompanhamento com muita seriedade.</p>
+                                                    <p class="review-text">Obrigada, doutor. Você realmente é excepcional no que faz.</p>
                                                 </article>
                                                 <article class="review-card">
                                                     <div class="review-head">
                                                         <div class="review-user">
                                                             <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Marcos Teixeira</span>
+                                                            <span class="review-name">Identidade preservada</span>
                                                         </div>
                                                         <span class="review-date">Cliente</span>
                                                     </div>
                                                     <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Sempre disponível para tirar dúvidas e orientar com clareza. Excelente suporte.</p>
-                                                </article>
-                                                <article class="review-card">
-                                                    <div class="review-head">
-                                                        <div class="review-user">
-                                                            <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Juliana Prado</span>
-                                                        </div>
-                                                        <span class="review-date">Cliente</span>
-                                                    </div>
-                                                    <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Atendimento humanizado, ágil e muito profissional do início ao fim.</p>
-                                                </article>
-                                                <article class="review-card">
-                                                    <div class="review-head">
-                                                        <div class="review-user">
-                                                            <span class="review-avatar" aria-hidden="true">👤</span>
-                                                            <span class="review-name">Bruno Carvalho</span>
-                                                        </div>
-                                                        <span class="review-date">Cliente</span>
-                                                    </div>
-                                                    <div class="review-stars">★★★★★</div>
-                                                    <p class="review-text">Ótima experiência, comunicação objetiva e acompanhamento constante do caso.</p>
+                                                    <p class="review-text">Desde já, agradeço pela compreensão, doutor. Deus abençoe sempre você e sua família. O mundo precisa de pessoas assim.</p>
                                                 </article>
                                             </div>
                                         </div>
@@ -933,19 +1039,23 @@ de viagem</h3>
                     <div class="elementor-element elementor-element-1c86f14 elementor-widget elementor-widget-heading" data-id="1c86f14" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
                             <h2 class="elementor-heading-title elementor-size-default">
-                                Estamos Sempre á <br>
-                                <span style="color:#F7F7F7">Disposição Para Você!</span>
+                               Estamos sempre à <br>
+                                <span style="color:#F7F7F7">disposição para <span class="soft-voce">você</span>!</span>
                             </h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-78b00a8 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="78b00a8" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>Seja bem-vindo, entregamos o melhor atendimento em direito do consumidor. Caso esteja passando por algum problema, estaremos aqui para te ouvir e correr atrás do seu direito.</p>
-                            <p>
-                                📍 Rua Anvar Dabus, 9-84 – Bauru, SP<br>
-                                📞 (14) 99628-7835<br>
-                                ✉️ <a class="contact-email" href="mailto:danilolima@adv.oabsp.org.br">danilolima@adv.oabsp.org.br</a>
+                            <p>Seja bem-vindo, entregamos o melhor atendimento em direito do consumidor. Caso esteja passando por algum problema, estaremos aqui para te ouvir e garantir os seus direitos.</p>
+                            <p class="contact-list">
+                                <span class="contact-row">✉️ <a class="contact-email" href="mailto:danilolima@adv.oabsp.org.br">danilolima@adv.oabsp.org.br</a></span>
+                                <span class="contact-row">📞 (14) 99628-7835</span>
+                                <span class="contact-row">📍 <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Rua Anvar Dabus, 9-84 – Bauru, SP</a></span>
+                                <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Como chegar</a>
                             </p>
+                            <div class="location-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253.57817029155305!2d-49.0602011748668!3d-22.337307721951635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf677294940001%3A0xde4334cc77e844cf!2sDanilo%20Lima%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1772220870288!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-841011e elementor-widget elementor-widget-button" data-id="841011e" data-element_type="widget" data-widget_type="button.default">
