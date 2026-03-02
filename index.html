@@ -181,17 +181,34 @@
             }
 
             .elementor-element-78b00a8 .contact-list {
-                margin-top: 10px;
+                margin-top: 14px;
+                display: grid;
+                gap: 14px;
+            }
+
+            .elementor-element-78b00a8 .contact-info {
+                padding: 14px 16px;
+                border: 1px solid rgba(255, 122, 0, 0.35);
+                border-radius: 16px;
+                background: rgba(255, 122, 0, 0.08);
             }
 
             .elementor-element-78b00a8 .contact-row {
-                display: block;
-                margin-bottom: 8px;
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                margin-bottom: 10px;
                 line-height: 1.6;
             }
 
             .elementor-element-78b00a8 .contact-row:last-of-type {
                 margin-bottom: 0;
+            }
+
+            .elementor-element-78b00a8 .contact-row-icon {
+                width: 20px;
+                text-align: center;
+                flex: 0 0 20px;
             }
 
             .elementor-element-78b00a8 .location-link {
@@ -209,7 +226,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 14px;
+                gap: 8px;
                 padding: 10px 16px;
                 border-radius: 999px;
                 background: var(--accent);
@@ -224,6 +241,27 @@
                 background: var(--accent-strong);
                 border-color: var(--accent-strong);
                 transform: translateY(-1px);
+            }
+
+            .elementor-element-78b00a8 .social-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            .elementor-element-78b00a8 .social-icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 18px;
+            }
+
+            .elementor-element-78b00a8 .social-icon svg {
+                width: 18px;
+                height: 18px;
+                fill: currentColor;
             }
 
             .elementor-element-78b00a8 .location-map {
@@ -1047,12 +1085,35 @@ de viagem</h3>
                     <div class="elementor-element elementor-element-78b00a8 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="78b00a8" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
                             <p>Seja bem-vindo, entregamos o melhor atendimento em direito do consumidor. Caso esteja passando por algum problema, estaremos aqui para te ouvir e garantir os seus direitos.</p>
-                            <p class="contact-list">
-                                <span class="contact-row">✉️ <a class="contact-email" href="mailto:danilolima@adv.oabsp.org.br">danilolima@adv.oabsp.org.br</a></span>
-                                <span class="contact-row">📞 (14) 99628-7835</span>
-                                <span class="contact-row">📍 <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Rua Anvar Dabus, 9-84 – Bauru, SP</a></span>
-                                <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Como chegar</a>
-                            </p>
+                            <div class="contact-list">
+                                <div class="contact-info">
+                                    <span class="contact-row"><span class="contact-row-icon">✉️</span><a class="contact-email" href="mailto:danilolima@adv.oabsp.org.br">danilolima@adv.oabsp.org.br</a></span>
+                                    <span class="contact-row"><span class="contact-row-icon">📞</span>(14) 99628-7835</span>
+                                    <span class="contact-row"><span class="contact-row-icon">📍</span><a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Rua Anvar Dabus, 9-84 – Bauru, SP</a></span>
+                                    <span class="contact-row"><span class="contact-row-icon">🧾</span>CNPJ: 25.047.702/0001-51</span>
+                                </div>
+                                <div class="social-actions">
+                                    <a class="map-button" href="https://www.instagram.com/danilolima_advogados/" target="_blank" rel="noopener noreferrer">
+                                        <span class="social-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5zm8.95 1.45a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4z"/></svg>
+                                        </span>
+                                        Instagram
+                                    </a>
+                                    <a class="map-button" href="https://www.facebook.com/share/18WYMqKeKu/" target="_blank" rel="noopener noreferrer">
+                                        <span class="social-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22v-8h2.8l.5-3h-3.3V9.2c0-.9.3-1.6 1.7-1.6H17V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.8v8h2.7z"/></svg>
+                                        </span>
+                                        Facebook
+                                    </a>
+                                    <a class="map-button" href="https://wa.me/5514996287835?text=Ol%C3%A1!%20Quero%20ajuda%20no%20meu%20caso" target="_blank" rel="noopener noreferrer">
+                                        <span class="social-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 3.5A11.8 11.8 0 0 0 2.9 18.6L2 22l3.5-.9A11.8 11.8 0 1 0 20.5 3.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-2.1.5.6-2-.2-.3A9 9 0 1 1 12 21zm4.9-6.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-.8 1c-.1.2-.3.2-.6.1a7.3 7.3 0 0 1-3.6-3.2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2.1-.4 0-.6l-1-2.4c-.2-.4-.4-.3-.6-.3h-.6c-.2 0-.6.1-.9.5-.3.4-1.2 1.1-1.2 2.8s1.2 3.4 1.4 3.6c.2.2 2.3 3.6 5.7 5 .8.4 1.4.6 1.8.7.8.3 1.5.2 2 .1.6-.1 1.9-.8 2.1-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/></svg>
+                                        </span>
+                                        WhatsApp
+                                    </a>
+                                    <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Rua+Anvar+Dabus%2C+9-84%2C+Bauru%2C+SP" target="_blank" rel="noopener noreferrer">Como chegar</a>
+                                </div>
+                            </div>
                             <div class="location-map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253.57817029155305!2d-49.0602011748668!3d-22.337307721951635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf677294940001%3A0xde4334cc77e844cf!2sDanilo%20Lima%20Advogados!5e1!3m2!1spt-BR!2sbr!4v1772220870288!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
